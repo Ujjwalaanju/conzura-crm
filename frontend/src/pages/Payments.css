@@ -1,0 +1,145 @@
+.payments-container{
+  padding:20px;
+}
+
+.payments-container h1{
+  color:#1e40af;
+  margin-bottom:20px;
+}
+
+.payments-container table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.payments-container th{
+  background:#2563eb;
+  color:white;
+  padding:12px;
+}
+
+.payments-container td{
+  padding:12px;
+  text-align:center;
+  border-bottom:1px solid #eee;
+}
+
+.payments-container tr:hover{
+  background:#f8fafc;
+}
+
+.payments-container button{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:8px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  margin:2px;
+}
+
+.payments-container button:hover{
+  background:#1d4ed8;
+}
+
+/* Modal */
+
+.modal-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.modal-box{
+  background:white;
+  width:500px;
+  max-height:80vh;
+  overflow:auto;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-box h2{
+  color:#2563eb;
+  margin-bottom:15px;
+}
+
+.modal-box p{
+  margin-bottom:15px;
+  font-weight:bold;
+}
+
+.modal-box input{
+  width:100%;
+  padding:10px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+}
+
+.modal-buttons{
+  margin-top:20px;
+}
+
+.modal-buttons button{
+  margin-right:10px;
+}
+
+.history-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:15px;
+}
+
+.history-table th{
+  background:#2563eb;
+  color:white;
+}
+
+.history-table th,
+.history-table td{
+  border:1px solid #ddd;
+  padding:10px;
+  text-align:center;
+}
+
+.customer-details{
+  background:#f8fafc;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.customer-details p{
+  margin:6px 0;
+  font-size:15px;
+}
+
+.history-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+}
+
+.history-table th{
+  background:#2563eb;
+  color:white;
+  padding:10px;
+}
+
+.history-table td{
+  padding:10px;
+  border:1px solid #ddd;
+  text-align:center;
+}

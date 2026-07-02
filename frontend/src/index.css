@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Dark Mode Styles */
+html.dark body {
+  background-color: #030712 !important; /* bg-gray-955 to bg-gray-950 equivalent */
+  color: #f9fafb !important; /* text-gray-50 */
+}
+
+/* Ensure bg-gray-100 becomes dark in dark mode */
+html.dark .bg-gray-100 {
+  background-color: #030712 !important;
+}
+
+/* Ensure bg-white card elements become dark slate card elements */
+html.dark .bg-white {
+  background-color: #111827 !important; /* bg-gray-900 */
+  color: #f3f4f6 !important;
+  border-color: #1f2937 !important; /* border-gray-800 */
+}
+
+/* Fix generic text contrast in dark cards */
+html.dark .text-gray-900 { color: #f9fafb !important; }
+html.dark .text-gray-800 { color: #f3f4f6 !important; }
+html.dark .text-gray-700 { color: #e5e7eb !important; }
+html.dark .text-gray-600 { color: #d1d5db !important; }
+html.dark .text-gray-500 { color: #9ca3af !important; }
+
+/* Ensure borders are dark gray */
+html.dark .border,
+html.dark .border-t,
+html.dark .border-b,
+html.dark .border-r,
+html.dark .border-l,
+html.dark .border-gray-250,
+html.dark .border-gray-300 {
+  border-color: #1f2937 !important;
+}
+
+/* Table overrides */
+html.dark table {
+  background-color: #111827 !important;
+  border-color: #1f2937 !important;
+}
+
+html.dark thead,
+html.dark thead tr,
+html.dark thead th {
+  background-color: #1f2937 !important; /* gray-800 */
+  color: #f9fafb !important;
+  border-color: #374151 !important;
+}
+
+html.dark tbody tr {
+  border-color: #1f2937 !important;
+}
+
+html.dark tbody tr:hover {
+  background-color: #1f2937 !important;
+}
+
+/* Form controls overrides */
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+  border-color: #374151 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #6b7280 !important;
+}
+
+/* Calendar component dark mode support (used in Tasks page) */
+html.dark .react-calendar {
+  background: #111827 !important;
+  color: #f9fafb !important;
+  border-color: #1f2937 !important;
+}
+
+html.dark .react-calendar__tile:enabled:hover,
+html.dark .react-calendar__tile:enabled:focus {
+  background-color: #1f2937 !important;
+}
+
+html.dark .react-calendar__navigation button:enabled:hover,
+html.dark .react-calendar__navigation button:enabled:focus {
+  background-color: #1f2937 !important;
+}
+
+html.dark .react-calendar__month-view__weekdays__weekday abbr {
+  color: #9ca3af !important;
+  text-decoration: none;
+}
